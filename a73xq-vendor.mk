@@ -104,6 +104,15 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev9/wpss.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev9/wpss.b06 \
     vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev9/wpss.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev9/wpss.b07 \
     vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev9/wpss.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev9/wpss.mdt \
+    vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev10/wpss.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev10/wpss.b00 \
+    vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev10/wpss.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev10/wpss.b01 \
+    vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev10/wpss.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev10/wpss.b02 \
+    vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev10/wpss.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev10/wpss.b03 \
+    vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev10/wpss.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev10/wpss.b04 \
+    vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev10/wpss.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev10/wpss.b05 \
+    vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev10/wpss.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev10/wpss.b06 \
+    vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev10/wpss.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev10/wpss.b07 \
+    vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev10/wpss.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev10/wpss.mdt \
     vendor/samsung/a73xq/proprietary/vendor/firmware/wpss.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/wpss.b00 \
     vendor/samsung/a73xq/proprietary/vendor/firmware/wpss.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/wpss.b01 \
     vendor/samsung/a73xq/proprietary/vendor/firmware/wpss.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/wpss.b02 \
