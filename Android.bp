@@ -5,15 +5,2242 @@
 soong_namespace {
 	imports: [
 		"vendor/samsung/sm7325-common",
+		"device/samsung/sm7325-common",
+		"hardware/qcom-caf/sm8350",
+		"hardware/qcom-caf/wlan",
+		"hardware/samsung",
+		"vendor/qcom/opensource/dataservices",
+		"vendor/qcom/opensource/display",
 	],
 }
 
+cc_prebuilt_library_shared {
+	name: "com.qti.eeprom.irs2381c_polar",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/com.qti.eeprom.irs2381c_polar.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/com.qti.eeprom.irs2381c_polar.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.eeprom.sec2qcconversion",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/com.qti.eeprom.sec2qcconversion.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/com.qti.eeprom.sec2qcconversion.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.eeprom.truly_cmb433",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/com.qti.eeprom.truly_cmb433.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/com.qti.eeprom.truly_cmb433.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.samsung.ois.mcu_stm32g",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/com.samsung.ois.mcu_stm32g.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/com.samsung.ois.mcu_stm32g.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.samsung.sensor.gc5035",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/com.samsung.sensor.gc5035.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/com.samsung.sensor.gc5035.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.samsung.sensor.gc5035_macro",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/com.samsung.sensor.gc5035_macro.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/com.samsung.sensor.gc5035_macro.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.samsung.sensor.imx258",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/com.samsung.sensor.imx258.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/com.samsung.sensor.imx258.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.samsung.sensor.imx616",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/com.samsung.sensor.imx616.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/com.samsung.sensor.imx616.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.samsung.sensor.s5khm6",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/com.samsung.sensor.s5khm6.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/com.samsung.sensor.s5khm6.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.camx.chiiqutils",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qti.camx.chiiqutils.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libcdsprpc", "libchilog", "libcom.qti.chinodeutils", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.camx.chiiqutils.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libcdsprpc", "libchilog", "libcom.qti.chinodeutils", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.eisv2",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qti.eisv2.so"],
+			shared_libs: ["libcutils", "liblog", "libsync", "libz", "libc++", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.eisv2.so"],
+			shared_libs: ["libcutils", "liblog", "libsync", "libz", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.eisv3",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qti.eisv3.so"],
+			shared_libs: ["libcutils", "liblog", "libsync", "libz", "libc++", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.eisv3.so"],
+			shared_libs: ["libcutils", "liblog", "libsync", "libz", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.hvx.addconstant",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qti.hvx.addconstant.so"],
+			shared_libs: ["libchilog", "liblog", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.hvx.addconstant.so"],
+			shared_libs: ["libchilog", "liblog", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.hvx.binning",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qti.hvx.binning.so"],
+			shared_libs: ["libchilog", "liblog", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.hvx.binning.so"],
+			shared_libs: ["libchilog", "liblog", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.node.depth",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qti.node.depth.so"],
+			shared_libs: ["libcamera_metadata", "libchilog", "libcom.qti.chinodeutils", "liblog", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.node.depth.so"],
+			shared_libs: ["libcamera_metadata", "libchilog", "libcom.qti.chinodeutils", "liblog", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.node.dewarp",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qti.node.dewarp.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libcamximageformatutils", "libchilog", "libcom.qti.chinodeutils", "libui", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.node.dewarp.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libcamximageformatutils", "libchilog", "libcom.qti.chinodeutils", "libui", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.node.dummyrtb",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qti.node.dummyrtb.so"],
+			shared_libs: ["libcamera_metadata", "libchilog", "libcom.qti.chinodeutils", "liblog", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.node.dummyrtb.so"],
+			shared_libs: ["libcamera_metadata", "libchilog", "libcom.qti.chinodeutils", "liblog", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.node.dummysat",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qti.node.dummysat.so"],
+			shared_libs: ["libcamera_metadata", "libchilog", "libcom.qti.chinodeutils", "liblog", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.node.dummysat.so"],
+			shared_libs: ["libcamera_metadata", "libchilog", "libcom.qti.chinodeutils", "liblog", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.node.eisv2",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qti.node.eisv2.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libcdsprpc", "libchilog", "libcom.qti.chinodeutils", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.node.eisv2.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libcdsprpc", "libchilog", "libcom.qti.chinodeutils", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.node.factorydump",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qti.node.factorydump.so"],
+			shared_libs: ["libcamera_metadata", "libchilog", "libcom.qti.chinodeutils", "liblog", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.node.factorydump.so"],
+			shared_libs: ["libcamera_metadata", "libchilog", "libcom.qti.chinodeutils", "liblog", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.node.fcv",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qti.node.fcv.so"],
+			shared_libs: ["libcamera_metadata", "libchilog", "libcom.qti.chinodeutils", "libcutils", "libsync", "liblog", "libz", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.node.fcv.so"],
+			shared_libs: ["libcamera_metadata", "libchilog", "libcom.qti.chinodeutils", "libcutils", "libsync", "liblog", "libz", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.node.gpu",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qti.node.gpu.so"],
+			shared_libs: ["libcamera_metadata", "libchilog", "libcom.qti.chinodeutils", "libcutils", "liblog", "libofflinelog", "libsync", "libz", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.node.gpu.so"],
+			shared_libs: ["libcamera_metadata", "libchilog", "libcom.qti.chinodeutils", "libcutils", "liblog", "libofflinelog", "libsync", "libz", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.node.memcpy",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qti.node.memcpy.so"],
+			shared_libs: ["libcamera_metadata", "libchilog", "libcom.qti.chinodeutils", "liblog", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.node.memcpy.so"],
+			shared_libs: ["libcamera_metadata", "libchilog", "libcom.qti.chinodeutils", "liblog", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.node.ml",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qti.node.ml.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libcdsprpc", "libchilog", "libcom.qti.chinodeutils", "libcamxswispiqmodule", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.node.ml.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libcdsprpc", "libchilog", "libcom.qti.chinodeutils", "libcamxswispiqmodule", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.node.sbi",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qti.node.sbi.so"],
+			shared_libs: ["libcamera_metadata", "libchilog", "libcom.qti.chinodeutils", "libsync", "libhidlbase", "libutils", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "libqdMetaData", "libhardware", "libxml", "libui", "libcutils", "libofflinelog", "libuniplugin", "liblog", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.node.sbi.so"],
+			shared_libs: ["libcamera_metadata", "libchilog", "libcom.qti.chinodeutils", "libsync", "libhidlbase", "libutils", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "libqdMetaData", "libhardware", "libxml", "libui", "libcutils", "libofflinelog", "libuniplugin", "liblog", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.node.stich",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qti.node.stich.so"],
+			shared_libs: ["libcamera_metadata", "libchilog", "libcom.qti.chinodeutils", "liblog", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.node.stich.so"],
+			shared_libs: ["libcamera_metadata", "libchilog", "libcom.qti.chinodeutils", "liblog", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.node.swaidenoiser",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qti.node.swaidenoiser.so"],
+			shared_libs: ["libcamera_metadata", "libchilog", "libcom.qti.chinodeutils", "libcutils", "liblog", "libofflinelog", "libsync", "libcamxswispiqmodule", "libz", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.node.swaidenoiser.so"],
+			shared_libs: ["libcamera_metadata", "libchilog", "libcom.qti.chinodeutils", "libcutils", "liblog", "libofflinelog", "libsync", "libcamxswispiqmodule", "libz", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.node.swcac",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qti.node.swcac.so"],
+			shared_libs: ["libcamera_metadata", "libchilog", "libcom.qti.chinodeutils", "libcutils", "liblog", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.node.swcac.so"],
+			shared_libs: ["libcamera_metadata", "libchilog", "libcom.qti.chinodeutils", "libcutils", "liblog", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.node.swlsc",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qti.node.swlsc.so"],
+			shared_libs: ["libcamera_metadata", "libchilog", "libcom.qti.chinodeutils", "libcutils", "liblog", "libofflinelog", "libsync", "libcamxswispiqmodule", "libz", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.node.swlsc.so"],
+			shared_libs: ["libcamera_metadata", "libchilog", "libcom.qti.chinodeutils", "libcutils", "liblog", "libofflinelog", "libsync", "libcamxswispiqmodule", "libz", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.node.swmctf",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qti.node.swmctf.so"],
+			shared_libs: ["libcamera_metadata", "libchilog", "libcom.qti.chinodeutils", "libcutils", "liblog", "libofflinelog", "libsync", "libcamxswispiqmodule", "libz", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.node.swmctf.so"],
+			shared_libs: ["libcamera_metadata", "libchilog", "libcom.qti.chinodeutils", "libcutils", "liblog", "libofflinelog", "libsync", "libcamxswispiqmodule", "libz", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.node.swmfnr",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qti.node.swmfnr.so"],
+			shared_libs: ["libcamera_metadata", "libchilog", "libcom.qti.chinodeutils", "libcutils", "liblog", "libofflinelog", "libsync", "libmmcamera_mfnr", "libcamxswispiqmodule", "libz", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.node.swmfnr.so"],
+			shared_libs: ["libcamera_metadata", "libchilog", "libcom.qti.chinodeutils", "libcutils", "liblog", "libofflinelog", "libsync", "libmmcamera_mfnr", "libcamxswispiqmodule", "libz", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.node.swpreprocess",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qti.node.swpreprocess.so"],
+			shared_libs: ["libcamera_metadata", "libchilog", "libcom.qti.chinodeutils", "liblog", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.node.swpreprocess.so"],
+			shared_libs: ["libcamera_metadata", "libchilog", "libcom.qti.chinodeutils", "liblog", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.node.swregistration",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qti.node.swregistration.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libchilog", "libcom.qti.chinodeutils", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.node.swregistration.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libchilog", "libcom.qti.chinodeutils", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.stats.aecwrapper",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qti.stats.aecwrapper.so"],
+			shared_libs: ["libcutils", "liblog", "libofflinelog", "libsync", "libz", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.stats.aecwrapper.so"],
+			shared_libs: ["libcutils", "liblog", "libofflinelog", "libsync", "libz", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.stats.afd",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qti.stats.afd.so"],
+			shared_libs: ["libcutils", "liblog", "libofflinelog", "libsync", "libz", "libc++", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.stats.afd.so"],
+			shared_libs: ["libcutils", "liblog", "libofflinelog", "libsync", "libz", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.stats.afwrapper",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qti.stats.afwrapper.so"],
+			shared_libs: ["libcutils", "liblog", "libofflinelog", "libsync", "libz", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.stats.afwrapper.so"],
+			shared_libs: ["libcutils", "liblog", "libofflinelog", "libsync", "libz", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.stats.asd",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qti.stats.asd.so"],
+			shared_libs: ["libcutils", "liblog", "libofflinelog", "libsync", "libz", "libc++", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.stats.asd.so"],
+			shared_libs: ["libcutils", "liblog", "libofflinelog", "libsync", "libz", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.stats.awbwrapper",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qti.stats.awbwrapper.so"],
+			shared_libs: ["libcutils", "liblog", "libofflinelog", "libsync", "libz", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.stats.awbwrapper.so"],
+			shared_libs: ["libcutils", "liblog", "libofflinelog", "libsync", "libz", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.stats.cnndriver",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qti.stats.cnndriver.so"],
+			shared_libs: ["libcutils", "liblog", "libofflinelog", "libsync", "libcdsprpc", "libbitmlengine", "libz", "libc++", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.stats.cnndriver.so"],
+			shared_libs: ["libcutils", "liblog", "libofflinelog", "libsync", "libcdsprpc", "libbitmlengine", "libz", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.stats.hafoverride",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qti.stats.hafoverride.so"],
+			shared_libs: ["libcutils", "liblog", "libofflinelog", "libsync", "libz", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.stats.hafoverride.so"],
+			shared_libs: ["libcutils", "liblog", "libofflinelog", "libsync", "libz", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.stats.pdlibsony",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qti.stats.pdlibsony.so"],
+			shared_libs: ["libcutils", "liblog", "libofflinelog", "libsync", "libz", "libc++", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.stats.pdlibsony.so"],
+			shared_libs: ["libcutils", "liblog", "libofflinelog", "libsync", "libz", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.stats.pdlibwrapper",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qti.stats.pdlibwrapper.so"],
+			shared_libs: ["libcutils", "liblog", "libofflinelog", "libsync", "libz", "libc++", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.stats.pdlibwrapper.so"],
+			shared_libs: ["libcutils", "liblog", "libofflinelog", "libsync", "libz", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.stats.tracker",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qti.stats.tracker.so"],
+			shared_libs: ["libcutils", "liblog", "libofflinelog", "libsync", "libfastcvopt", "libfastcvdsp_stub", "libscveCommon", "libscveCommon_stub", "libscveObjectTracker", "libscveObjectTracker_stub", "libscveObjectSegmentation", "libscveObjectSegmentation_stub", "com.qti.stats.common", "libz", "libc++", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.stats.tracker.so"],
+			shared_libs: ["libcutils", "liblog", "libofflinelog", "libsync", "libfastcvopt", "libfastcvdsp_stub", "libscveCommon", "libscveCommon_stub", "libscveObjectTracker", "libscveObjectTracker_stub", "libscveObjectSegmentation", "libscveObjectSegmentation_stub", "com.qti.stats.common", "libz", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qtistatic.stats.aec",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qtistatic.stats.aec.so"],
+			shared_libs: ["libchilog", "libcutils", "liblog", "libofflinelog", "libsync", "libz", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qtistatic.stats.aec.so"],
+			shared_libs: ["libchilog", "libcutils", "liblog", "libofflinelog", "libsync", "libz", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qtistatic.stats.af",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qtistatic.stats.af.so"],
+			shared_libs: ["libchilog", "libcutils", "liblog", "libofflinelog", "libsync", "libz", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qtistatic.stats.af.so"],
+			shared_libs: ["libchilog", "libcutils", "liblog", "libofflinelog", "libsync", "libz", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qtistatic.stats.awb",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qtistatic.stats.awb.so"],
+			shared_libs: ["libchilog", "libcutils", "liblog", "libofflinelog", "libsync", "libz", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qtistatic.stats.awb.so"],
+			shared_libs: ["libchilog", "libcutils", "liblog", "libofflinelog", "libsync", "libz", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qtistatic.stats.pdlib",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qtistatic.stats.pdlib.so"],
+			shared_libs: ["libchilog", "libcutils", "liblog", "libofflinelog", "libsync", "libz", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so"],
+			shared_libs: ["libchilog", "libcutils", "liblog", "libofflinelog", "libsync", "libz", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.samsung.node.capture_bokeh",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.samsung.node.capture_bokeh.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libchilog", "libcom.qti.chinodeutils", "libuniplugin", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.samsung.node.capture_bokeh.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libchilog", "libcom.qti.chinodeutils", "libuniplugin", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.samsung.node.capture_fusion",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.samsung.node.capture_fusion.so"],
+			shared_libs: ["libcamera_metadata", "libhardware", "libchilog", "libcom.qti.chinodeutils", "libcutils", "liblog", "libofflinelog", "libsync", "libtriplecam_image_optical_zoom", "libmpbase", "libuniplugin", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.samsung.node.capture_fusion.so"],
+			shared_libs: ["libcamera_metadata", "libhardware", "libchilog", "libcom.qti.chinodeutils", "libcutils", "liblog", "libofflinelog", "libsync", "libtriplecam_image_optical_zoom", "libmpbase", "libuniplugin", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.samsung.node.realtimebokeh",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.samsung.node.realtimebokeh.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libchilog", "libcom.qti.chinodeutils", "libuniplugin", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.samsung.node.realtimebokeh.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libchilog", "libcom.qti.chinodeutils", "libuniplugin", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.samsung.node.resolution",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.samsung.node.resolution.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.samsung.node.resolution.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.samsung.node.smooth_transition",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.samsung.node.smooth_transition.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.samsung.node.smooth_transition.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.samsung.node.uniplugin_capture",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.samsung.node.uniplugin_capture.so"],
+			shared_libs: ["libcamera_metadata", "libchilog", "libcom.qti.chinodeutils", "libcutils", "liblog", "libofflinelog", "libsync", "libuniplugin", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.samsung.node.uniplugin_capture.so"],
+			shared_libs: ["libcamera_metadata", "libchilog", "libcom.qti.chinodeutils", "libcutils", "liblog", "libofflinelog", "libsync", "libuniplugin", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.samsung.node.uniplugin_preview",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.samsung.node.uniplugin_preview.so"],
+			shared_libs: ["libcamera_metadata", "libchilog", "libcom.qti.chinodeutils", "libcutils", "liblog", "libofflinelog", "libsync", "libuniplugin", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.samsung.node.uniplugin_preview.so"],
+			shared_libs: ["libcamera_metadata", "libchilog", "libcom.qti.chinodeutils", "libcutils", "liblog", "libofflinelog", "libsync", "libuniplugin", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.samsung.node.uniplugin_recording",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.samsung.node.uniplugin_recording.so"],
+			shared_libs: ["libcamera_metadata", "libchilog", "libcom.qti.chinodeutils", "libcutils", "liblog", "libofflinelog", "libsync", "libuniplugin", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.samsung.node.uniplugin_recording.so"],
+			shared_libs: ["libcamera_metadata", "libchilog", "libcom.qti.chinodeutils", "libcutils", "liblog", "libofflinelog", "libsync", "libuniplugin", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.samsung.node.uniplugin_vdis",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.samsung.node.uniplugin_vdis.so"],
+			shared_libs: ["libcamera_metadata", "libchilog", "libcom.qti.chinodeutils", "libcutils", "liblog", "libofflinelog", "libsync", "libuniplugin", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.samsung.node.uniplugin_vdis.so"],
+			shared_libs: ["libcamera_metadata", "libchilog", "libcom.qti.chinodeutils", "libcutils", "liblog", "libofflinelog", "libsync", "libuniplugin", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.ss.stats.aec",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.ss.stats.aec.so"],
+			shared_libs: ["libcutils", "liblog", "libofflinelog", "libsync", "libqcwrappercommon", "libsecnativefeature", "libexpat", "libsensorlistener", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.ss.stats.aec.so"],
+			shared_libs: ["libcutils", "liblog", "libofflinelog", "libsync", "libqcwrappercommon", "libsecnativefeature", "libexpat", "libsensorlistener", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.ss.stats.af",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.ss.stats.af.so"],
+			shared_libs: ["libcutils", "liblog", "libofflinelog", "libsync", "libqcwrappercommon", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.ss.stats.af.so"],
+			shared_libs: ["libcutils", "liblog", "libofflinelog", "libsync", "libqcwrappercommon", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.ss.stats.awb",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.ss.stats.awb.so"],
+			shared_libs: ["libcutils", "liblog", "libofflinelog", "libsync", "libqcwrappercommon", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.ss.stats.awb.so"],
+			shared_libs: ["libcutils", "liblog", "libofflinelog", "libsync", "libqcwrappercommon", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.ss.stats.pdlib",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.ss.stats.pdlib.so"],
+			shared_libs: ["libcutils", "liblog", "libofflinelog", "libsync", "libqcwrappercommon", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.ss.stats.pdlib.so"],
+			shared_libs: ["libcutils", "liblog", "libofflinelog", "libsync", "libqcwrappercommon", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.feature2.anchorsync",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/com.qti.feature2.anchorsync.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/com.qti.feature2.anchorsync.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.feature2.demux",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/com.qti.feature2.demux.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/com.qti.feature2.demux.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.feature2.derivedoffline",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/com.qti.feature2.derivedoffline.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "com.qti.feature2.generic", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/com.qti.feature2.derivedoffline.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "com.qti.feature2.generic", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.feature2.frameselect",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/com.qti.feature2.frameselect.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/com.qti.feature2.frameselect.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.feature2.fusion",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/com.qti.feature2.fusion.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/com.qti.feature2.fusion.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.feature2.generic",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/com.qti.feature2.generic.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/com.qti.feature2.generic.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.feature2.gs.kodiak",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/com.qti.feature2.gs.kodiak.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "com.qti.feature2.frameselect", "com.qti.feature2.generic", "com.qti.feature2.serializer", "com.qti.feature2.rt", "com.qti.feature2.anchorsync", "com.qti.feature2.demux", "com.qti.feature2.fusion", "com.qti.feature2.hdr", "com.qti.feature2.memcpy", "com.qti.feature2.mfsr", "com.qti.feature2.rawhdr", "com.qti.feature2.swmf", "com.qti.feature2.mcreprocrt", "com.qti.feature2.mux", "com.qti.feature2.realtimeserializer", "com.qti.feature2.rtmcx", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/com.qti.feature2.gs.kodiak.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "com.qti.feature2.frameselect", "com.qti.feature2.generic", "com.qti.feature2.serializer", "com.qti.feature2.rt", "com.qti.feature2.anchorsync", "com.qti.feature2.demux", "com.qti.feature2.fusion", "com.qti.feature2.hdr", "com.qti.feature2.memcpy", "com.qti.feature2.mfsr", "com.qti.feature2.rawhdr", "com.qti.feature2.swmf", "com.qti.feature2.mcreprocrt", "com.qti.feature2.mux", "com.qti.feature2.realtimeserializer", "com.qti.feature2.rtmcx", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.feature2.gs.sm8350",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/com.qti.feature2.gs.sm8350.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "com.qti.feature2.frameselect", "com.qti.feature2.generic", "com.qti.feature2.serializer", "com.qti.feature2.rt", "com.qti.feature2.anchorsync", "com.qti.feature2.demux", "com.qti.feature2.fusion", "com.qti.feature2.hdr", "com.qti.feature2.memcpy", "com.qti.feature2.mfsr", "com.qti.feature2.rawhdr", "com.qti.feature2.swmf", "com.qti.feature2.mcreprocrt", "com.qti.feature2.mux", "com.qti.feature2.realtimeserializer", "com.qti.feature2.rtmcx", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/com.qti.feature2.gs.sm8350.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "com.qti.feature2.frameselect", "com.qti.feature2.generic", "com.qti.feature2.serializer", "com.qti.feature2.rt", "com.qti.feature2.anchorsync", "com.qti.feature2.demux", "com.qti.feature2.fusion", "com.qti.feature2.hdr", "com.qti.feature2.memcpy", "com.qti.feature2.mfsr", "com.qti.feature2.rawhdr", "com.qti.feature2.swmf", "com.qti.feature2.mcreprocrt", "com.qti.feature2.mux", "com.qti.feature2.realtimeserializer", "com.qti.feature2.rtmcx", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.feature2.hdr",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/com.qti.feature2.hdr.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/com.qti.feature2.hdr.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.feature2.mcreprocrt",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/com.qti.feature2.mcreprocrt.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/com.qti.feature2.mcreprocrt.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.feature2.memcpy",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/com.qti.feature2.memcpy.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/com.qti.feature2.memcpy.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.feature2.mfsr",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/com.qti.feature2.mfsr.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/com.qti.feature2.mfsr.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.feature2.ml",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/com.qti.feature2.ml.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/com.qti.feature2.ml.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.feature2.mux",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/com.qti.feature2.mux.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/com.qti.feature2.mux.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.feature2.qcfa",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/com.qti.feature2.qcfa.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/com.qti.feature2.qcfa.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.feature2.rawhdr",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/com.qti.feature2.rawhdr.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/com.qti.feature2.rawhdr.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.feature2.realtimeserializer",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/com.qti.feature2.realtimeserializer.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/com.qti.feature2.realtimeserializer.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.feature2.rt",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/com.qti.feature2.rt.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/com.qti.feature2.rt.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.feature2.rtmcx",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/com.qti.feature2.rtmcx.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/com.qti.feature2.rtmcx.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.feature2.serializer",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/com.qti.feature2.serializer.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/com.qti.feature2.serializer.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.feature2.statsregeneration",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/com.qti.feature2.statsregeneration.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/com.qti.feature2.statsregeneration.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.feature2.stub",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/com.qti.feature2.stub.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/com.qti.feature2.stub.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.feature2.swmf",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/com.qti.feature2.swmf.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/com.qti.feature2.swmf.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "libchilog", "libz", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "camera.qcom",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/hw/camera.qcom.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libcdsprpc", "libcamxfdengine", "libcamximageformatutils", "libcamxstatscore", "libofflinedump", "libprotobuf-cpp-full-3.9.1-vendorcompat", "libqmi_cci", "libqmi_common_so", "libqmi_encdec", "libsensorslog", "libsnsapi", "libcvp2_1", "libcvp_common", "libsynx", "libz", "libdl", "libclang_rt.ubsan_standalone", "libc", "libm", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/hw/camera.qcom.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libcdsprpc", "libcamxfdengine", "libcamximageformatutils", "libcamxstatscore", "libofflinedump", "libprotobuf-cpp-full-3.9.1-vendorcompat", "libqmi_cci", "libqmi_common_so", "libqmi_encdec", "libsensorslog", "libsnsapi", "libcvp2_1", "libcvp_common", "libsynx", "libz", "libdl", "libclang_rt.ubsan_standalone", "libc", "libm", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "hw",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.chi.override",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/hw/com.qti.chi.override.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libuniplugin", "libsecril-client_vendor", "vendor.samsung.hardware.thermal@1.0", "libchilog", "vendor.qti.hardware.camera.postproc@1.0-service-impl", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/hw/com.qti.chi.override.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libuniplugin", "libsecril-client_vendor", "vendor.samsung.hardware.thermal@1.0", "libchilog", "vendor.qti.hardware.camera.postproc@1.0-service-impl", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "hw",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "sensors.grip",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/sensors.grip.so"],
+			shared_libs: ["liblog", "libcutils", "libutils", "libfmq", "libhidlbase", "libhardware", "android.hardware.sensors@2.0", "android.hardware.sensors@2.0-ScopedWakelock", "libc++", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/sensors.grip.so"],
+			shared_libs: ["liblog", "libcutils", "libutils", "libfmq", "libhidlbase", "libhardware", "android.hardware.sensors@2.0", "android.hardware.sensors@2.0-ScopedWakelock", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "sensors.ssc",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/sensors.ssc.so"],
+			shared_libs: ["libprotobuf-cpp-lite-3.9.1-vendorcompat", "liblog", "libsnsapi", "libssc", "libsnsdiaglog", "libutils", "libcutils", "libsns_fastRPC_util", "libsensorslog", "libhardware", "libhidlbase", "android.hardware.sensors@2.0", "android.hardware.sensors@2.0-ScopedWakelock", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "vendor.qti.hardware.display.mapper@1.1", "libc++", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/sensors.ssc.so"],
+			shared_libs: ["libprotobuf-cpp-lite-3.9.1-vendorcompat", "liblog", "libsnsapi", "libssc", "libsnsdiaglog", "libutils", "libcutils", "libsns_fastRPC_util", "libsensorslog", "libhardware", "libhidlbase", "android.hardware.sensors@2.0", "android.hardware.sensors@2.0-ScopedWakelock", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "vendor.qti.hardware.display.mapper@1.1", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "audio.primary.lahaina",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/hw/audio.primary.lahaina.so"],
+			shared_libs: ["libbase", "liblog", "libcutils", "libtinyalsa", "libtinycompress", "libaudioroute", "libaudioutils", "libexpat", "libhidlbase", "libprocessgroup", "libutils", "libsecaudioinfo", "libaudio_soundtrigger", "libsamsungVoipResampler", "librecordalive", "libspeakercalibration", "libaudio_log_utils", "vendor.qti.hardware.audiohalext@1.0", "android.hardware.power@1.2", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "32",
+	relative_install_path: "hw",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libspeakercalibration",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libspeakercalibration.so"],
+			shared_libs: ["liblog", "libcutils", "libutils", "libc", "libmedia_helper", "libc++", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "32",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.stats.aec",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.stats.aec.so"],
+			shared_libs: ["libcutils", "liblog", "libsync", "libofflinelog", "com.qti.stats.common", "libz", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.stats.aecxcore",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.stats.aecxcore.so"],
+			shared_libs: ["libcutils", "liblog", "libsync", "libofflinelog", "com.qti.stats.common", "libz", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.stats.af",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.stats.af.so"],
+			shared_libs: ["libcutils", "liblog", "libofflinelog", "libsync", "com.qti.stats.common", "libz", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.stats.awb",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.stats.awb.so"],
+			shared_libs: ["libcutils", "liblog", "libofflinelog", "libsync", "com.qti.stats.common", "libz", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.stats.haf",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.stats.haf.so"],
+			shared_libs: ["libcutils", "liblog", "libofflinelog", "libsync", "com.qti.stats.common", "libz", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.stats.pdlib",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.stats.pdlib.so"],
+			shared_libs: ["libcutils", "liblog", "libofflinelog", "libsync", "libz", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libdepthmapwrapper_secure",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/libdepthmapwrapper_secure.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libbauthserver",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libbauthserver.so"],
+			shared_libs: ["liblog", "libutils", "libcutils", "libbinder", "libbauthtzcommon", "libsynaFpSensorTestNwd", "libegis_fp_normal_sensor_test", "libgf_in_system_lib", "libqfp_sensortest", "libcrypto", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libbauthtzcommon",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libbauthtzcommon.so"],
+			shared_libs: ["liblog", "libcutils", "libutils", "libQSEEComAPI", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libegis_fp_normal_sensor_test",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libegis_fp_normal_sensor_test.so"],
+			shared_libs: ["liblog", "libc", "libm", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libgf_in_system_lib",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libgf_in_system_lib.so"],
+			shared_libs: ["libcutils", "liblog", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libqfp_sensortest",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libqfp_sensortest.so"],
+			shared_libs: ["libcutils", "liblog", "libutils", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libsec2qc_conversion",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libsec2qc_conversion.so"],
+			shared_libs: ["liblog", "libm", "libdl", "libc", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libsynaFpSensorTestNwd",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libsynaFpSensorTestNwd.so"],
+			shared_libs: ["liblog", "libdl", "libc", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "nfc_nci_nxpsn",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/nfc_nci_nxpsn.so"],
+			shared_libs: ["android.hardware.nfc@1.0", "android.hardware.nfc@1.1", "android.hardware.nfc@1.2", "libbase", "libcutils", "libhardware", "libhardware_legacy", "libhidlbase", "liblog", "libutils", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.samsung.hardware.nfc@2.0",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.samsung.hardware.nfc@2.0.so"],
+			shared_libs: ["libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+
 prebuilt_etc_xml {
-	name: "nxp.android.hardware.nfc@1.2-service",
+	name: "nxp.android.hardware.nfc@1.2-service.xml",
 	owner: "samsung",
 	src: "proprietary/vendor/etc/vintf/manifest/nxp.android.hardware.nfc@1.2-service.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "nxp.android.hardware.nfc@1.2-service",
+	owner: "samsung",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/bin/hw/nxp.android.hardware.nfc@1.2-service"],
+			shared_libs: ["nfc_nci_nxpsn", "libbase", "libcutils", "libhardware", "liblog", "libutils", "android.hardware.nfc@1.0", "android.hardware.nfc@1.1", "android.hardware.nfc@1.2", "libhidlbase", "vendor.samsung.hardware.nfc@2.0", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 

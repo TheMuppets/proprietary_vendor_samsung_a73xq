@@ -6,7 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/a73xq
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/a73xq/proprietary/vendor/bin/hw/nxp.android.hardware.nfc@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/nxp.android.hardware.nfc@1.2-service \
     vendor/samsung/a73xq/proprietary/vendor/etc/audconf/OPEN/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/Bluetooth_cal.acdb \
     vendor/samsung/a73xq/proprietary/vendor/etc/audconf/OPEN/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/General_cal.acdb \
     vendor/samsung/a73xq/proprietary/vendor/etc/audconf/OPEN/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/Global_cal.acdb \
@@ -41,6 +40,15 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a73xq/proprietary/vendor/firmware/tsp_synaptics/s3908_a73xq_csot.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tsp_synaptics/s3908_a73xq_csot.bin \
     vendor/samsung/a73xq/proprietary/vendor/firmware/tsp_synaptics/s3908_a73xq_sdc.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tsp_synaptics/s3908_a73xq_sdc.bin \
     vendor/samsung/a73xq/proprietary/vendor/firmware/tsp_synaptics/s3908_a73xq_sdc_4th.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tsp_synaptics/s3908_a73xq_sdc_4th.bin \
+    vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev10/wpss.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev10/wpss.b00 \
+    vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev10/wpss.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev10/wpss.b01 \
+    vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev10/wpss.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev10/wpss.b02 \
+    vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev10/wpss.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev10/wpss.b03 \
+    vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev10/wpss.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev10/wpss.b04 \
+    vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev10/wpss.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev10/wpss.b05 \
+    vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev10/wpss.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev10/wpss.b06 \
+    vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev10/wpss.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev10/wpss.b07 \
+    vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev10/wpss.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev10/wpss.mdt \
     vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev3/wpss.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev3/wpss.b00 \
     vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev3/wpss.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev3/wpss.b01 \
     vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev3/wpss.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev3/wpss.b02 \
@@ -104,15 +112,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev9/wpss.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev9/wpss.b06 \
     vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev9/wpss.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev9/wpss.b07 \
     vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev9/wpss.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev9/wpss.mdt \
-    vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev10/wpss.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev10/wpss.b00 \
-    vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev10/wpss.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev10/wpss.b01 \
-    vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev10/wpss.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev10/wpss.b02 \
-    vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev10/wpss.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev10/wpss.b03 \
-    vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev10/wpss.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev10/wpss.b04 \
-    vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev10/wpss.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev10/wpss.b05 \
-    vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev10/wpss.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev10/wpss.b06 \
-    vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev10/wpss.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev10/wpss.b07 \
-    vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev10/wpss.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev10/wpss.mdt \
     vendor/samsung/a73xq/proprietary/vendor/firmware/wpss.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/wpss.b00 \
     vendor/samsung/a73xq/proprietary/vendor/firmware/wpss.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/wpss.b01 \
     vendor/samsung/a73xq/proprietary/vendor/firmware/wpss.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/wpss.b02 \
@@ -122,16 +121,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a73xq/proprietary/vendor/firmware/wpss.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/wpss.b06 \
     vendor/samsung/a73xq/proprietary/vendor/firmware/wpss.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/wpss.b07 \
     vendor/samsung/a73xq/proprietary/vendor/firmware/wpss.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/wpss.mdt \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/com.qti.eeprom.irs2381c_polar.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.eeprom.irs2381c_polar.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/com.qti.eeprom.sec2qcconversion.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.eeprom.sec2qcconversion.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/com.qti.eeprom.truly_cmb433.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.eeprom.truly_cmb433.so \
     vendor/samsung/a73xq/proprietary/vendor/lib/camera/com.qti.tuned.default.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.default.bin \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/com.samsung.ois.mcu_stm32g.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.ois.mcu_stm32g.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/com.samsung.sensor.gc5035.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensor.gc5035.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/com.samsung.sensor.gc5035_macro.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensor.gc5035_macro.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/com.samsung.sensor.imx258.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensor.imx258.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/com.samsung.sensor.imx616.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensor.imx616.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/com.samsung.sensor.s5khm6.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensor.s5khm6.so \
     vendor/samsung/a73xq/proprietary/vendor/lib/camera/com.samsung.sensormodule.0_lsi_s5khm6.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.0_lsi_s5khm6.bin \
     vendor/samsung/a73xq/proprietary/vendor/lib/camera/com.samsung.sensormodule.0_lsi_s5khm6_evt1.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.0_lsi_s5khm6_evt1.bin \
     vendor/samsung/a73xq/proprietary/vendor/lib/camera/com.samsung.sensormodule.0_lsi_s5khm6_evt1_otp.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.0_lsi_s5khm6_evt1_otp.bin \
@@ -145,111 +135,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a73xq/proprietary/vendor/lib/camera/com.samsung.tuned.lsi_s5khm6.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.tuned.lsi_s5khm6.bin \
     vendor/samsung/a73xq/proprietary/vendor/lib/camera/com.samsung.tuned.sony_imx258.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.tuned.sony_imx258.bin \
     vendor/samsung/a73xq/proprietary/vendor/lib/camera/com.samsung.tuned.sony_imx616.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.tuned.sony_imx616.bin \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.qti.camx.chiiqutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.camx.chiiqutils.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.qti.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.eisv2.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.qti.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.eisv3.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.qti.hvx.addconstant.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.hvx.addconstant.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.qti.hvx.binning.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.hvx.binning.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.qti.node.depth.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.depth.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.qti.node.dewarp.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.dewarp.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.qti.node.dummyrtb.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.dummyrtb.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.qti.node.dummysat.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.dummysat.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.qti.node.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.eisv2.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.qti.node.factorydump.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.factorydump.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.qti.node.fcv.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.fcv.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.qti.node.gpu.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.gpu.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.qti.node.memcpy.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.memcpy.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.qti.node.ml.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.ml.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.qti.node.sbi.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.sbi.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.qti.node.stich.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.stich.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.qti.node.swaidenoiser.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.swaidenoiser.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.qti.node.swcac.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.swcac.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.qti.node.swlsc.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.swlsc.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.qti.node.swmctf.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.swmctf.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.qti.node.swmfnr.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.swmfnr.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.qti.node.swpreprocess.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.swpreprocess.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.qti.node.swregistration.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.swregistration.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.qti.stats.aecwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.aecwrapper.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.qti.stats.afd.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.afd.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.qti.stats.afwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.afwrapper.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.qti.stats.asd.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.asd.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.qti.stats.awbwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.awbwrapper.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.qti.stats.cnndriver.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.cnndriver.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.qti.stats.hafoverride.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.hafoverride.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.qti.stats.pdlibsony.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.pdlibsony.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.qti.stats.pdlibwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.pdlibwrapper.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.qti.stats.tracker.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.tracker.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.qtistatic.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qtistatic.stats.aec.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.qtistatic.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qtistatic.stats.af.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.qtistatic.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qtistatic.stats.awb.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.qtistatic.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qtistatic.stats.pdlib.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.samsung.node.capture_bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.samsung.node.capture_bokeh.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.samsung.node.capture_fusion.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.samsung.node.capture_fusion.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.samsung.node.realtimebokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.samsung.node.realtimebokeh.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.samsung.node.resolution.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.samsung.node.resolution.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.samsung.node.smooth_transition.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.samsung.node.smooth_transition.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.samsung.node.uniplugin_capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.samsung.node.uniplugin_capture.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.samsung.node.uniplugin_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.samsung.node.uniplugin_preview.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.samsung.node.uniplugin_recording.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.samsung.node.uniplugin_recording.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.samsung.node.uniplugin_vdis.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.samsung.node.uniplugin_vdis.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.ss.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.ss.stats.aec.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.ss.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.ss.stats.af.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.ss.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.ss.stats.awb.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/camera/components/com.ss.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.ss.stats.pdlib.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/com.qti.feature2.anchorsync.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.anchorsync.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/com.qti.feature2.demux.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.demux.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/com.qti.feature2.derivedoffline.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.derivedoffline.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/com.qti.feature2.frameselect.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.frameselect.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/com.qti.feature2.fusion.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.fusion.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/com.qti.feature2.generic.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.generic.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/com.qti.feature2.gs.kodiak.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.gs.kodiak.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/com.qti.feature2.gs.sm8350.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.gs.sm8350.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/com.qti.feature2.hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.hdr.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/com.qti.feature2.mcreprocrt.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.mcreprocrt.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/com.qti.feature2.memcpy.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.memcpy.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/com.qti.feature2.mfsr.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.mfsr.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/com.qti.feature2.ml.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.ml.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/com.qti.feature2.mux.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.mux.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/com.qti.feature2.qcfa.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.qcfa.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/com.qti.feature2.rawhdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.rawhdr.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/com.qti.feature2.realtimeserializer.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.realtimeserializer.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/com.qti.feature2.rt.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.rt.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/com.qti.feature2.rtmcx.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.rtmcx.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/com.qti.feature2.serializer.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.serializer.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/com.qti.feature2.statsregeneration.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.statsregeneration.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/com.qti.feature2.stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.stub.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/com.qti.feature2.swmf.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.swmf.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/hw/audio.primary.lahaina.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.lahaina.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.qcom.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.qti.chi.override.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/libaivideocentral.arcsoft.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaivideocentral.arcsoft.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/libarcsoft_super_night_auto_raw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_super_night_auto_raw.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/libauto_framing_arcsoft.uniplugin@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/libauto_framing_arcsoft.uniplugin@1.0.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/libautotracking_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libautotracking_interface.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/libbauthserver.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbauthserver.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/libbauthtzcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbauthtzcommon.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/libbodyid.arcsoft.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbodyid.arcsoft.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/libdualcam_refocus_image.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdualcam_refocus_image.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/libegis_fp_normal_sensor_test.so:$(TARGET_COPY_OUT_VENDOR)/lib/libegis_fp_normal_sensor_test.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/libgf_in_system_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgf_in_system_lib.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/libhypermotion_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhypermotion_core.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/libqfp_sensortest.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqfp_sensortest.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/libsec2qc_conversion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsec2qc_conversion.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/libspeakercalibration.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspeakercalibration.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/libsynaFpSensorTestNwd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsynaFpSensorTestNwd.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/libzoomroi.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib/libzoomroi.samsung.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/sensors.grip.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.grip.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.ssc.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/com.qti.eeprom.irs2381c_polar.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.eeprom.irs2381c_polar.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/com.qti.eeprom.sec2qcconversion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.eeprom.sec2qcconversion.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/com.qti.eeprom.truly_cmb433.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.eeprom.truly_cmb433.so \
     vendor/samsung/a73xq/proprietary/vendor/lib64/camera/com.qti.tuned.default.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.default.bin \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/com.samsung.ois.mcu_stm32g.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.ois.mcu_stm32g.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/com.samsung.sensor.gc5035.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensor.gc5035.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/com.samsung.sensor.gc5035_macro.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensor.gc5035_macro.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/com.samsung.sensor.imx258.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensor.imx258.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/com.samsung.sensor.imx616.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensor.imx616.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/com.samsung.sensor.s5khm6.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensor.s5khm6.so \
     vendor/samsung/a73xq/proprietary/vendor/lib64/camera/com.samsung.sensormodule.0_lsi_s5khm6.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.0_lsi_s5khm6.bin \
     vendor/samsung/a73xq/proprietary/vendor/lib64/camera/com.samsung.sensormodule.0_lsi_s5khm6_evt1.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.0_lsi_s5khm6_evt1.bin \
     vendor/samsung/a73xq/proprietary/vendor/lib64/camera/com.samsung.sensormodule.0_lsi_s5khm6_evt1_otp.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.0_lsi_s5khm6_evt1_otp.bin \
@@ -263,113 +149,116 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a73xq/proprietary/vendor/lib64/camera/com.samsung.tuned.lsi_s5khm6.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.lsi_s5khm6.bin \
     vendor/samsung/a73xq/proprietary/vendor/lib64/camera/com.samsung.tuned.sony_imx258.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.sony_imx258.bin \
     vendor/samsung/a73xq/proprietary/vendor/lib64/camera/com.samsung.tuned.sony_imx616.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.sony_imx616.bin \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.camx.chiiqutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.camx.chiiqutils.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.eisv2.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.eisv3.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.hvx.addconstant.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.hvx.addconstant.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.hvx.binning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.hvx.binning.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.node.depth.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.depth.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.node.dewarp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.dewarp.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.node.dummyrtb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.dummyrtb.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.node.dummysat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.dummysat.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.node.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.eisv2.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.node.factorydump.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.factorydump.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.node.fcv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.fcv.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.node.gpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.gpu.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.node.memcpy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.memcpy.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.node.ml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.ml.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.node.sbi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.sbi.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.node.stich.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.stich.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.node.swaidenoiser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.swaidenoiser.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.node.swcac.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.swcac.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.node.swlsc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.swlsc.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.node.swmctf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.swmctf.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.node.swmfnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.swmfnr.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.node.swpreprocess.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.swpreprocess.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.node.swregistration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.swregistration.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.aec.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.stats.aecwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.aecwrapper.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.stats.aecxcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.aecxcore.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.af.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.stats.afd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.afd.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.stats.afwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.afwrapper.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.stats.asd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.asd.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.awb.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.stats.awbwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.awbwrapper.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.stats.cnndriver.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.cnndriver.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.stats.haf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.haf.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.stats.hafoverride.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.hafoverride.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlib.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlibsony.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlibsony.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlibwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlibwrapper.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qti.stats.tracker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.tracker.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.aec.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.af.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.awb.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.pdlib.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.samsung.node.capture_bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.samsung.node.capture_bokeh.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.samsung.node.capture_fusion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.samsung.node.capture_fusion.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.samsung.node.realtimebokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.samsung.node.realtimebokeh.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.samsung.node.resolution.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.samsung.node.resolution.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.samsung.node.smooth_transition.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.samsung.node.smooth_transition.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.samsung.node.uniplugin_capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.samsung.node.uniplugin_capture.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.samsung.node.uniplugin_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.samsung.node.uniplugin_preview.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.samsung.node.uniplugin_recording.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.samsung.node.uniplugin_recording.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.samsung.node.uniplugin_vdis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.samsung.node.uniplugin_vdis.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.ss.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.ss.stats.aec.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.ss.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.ss.stats.af.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.ss.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.ss.stats.awb.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/com.ss.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.ss.stats.pdlib.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/components/libdepthmapwrapper_secure.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/libdepthmapwrapper_secure.so \
     vendor/samsung/a73xq/proprietary/vendor/lib64/camera/f_dual_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/f_dual_calibration.bin \
     vendor/samsung/a73xq/proprietary/vendor/lib64/camera/t_t10_dual_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/t_t10_dual_calibration.bin \
     vendor/samsung/a73xq/proprietary/vendor/lib64/camera/uw_dual_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/uw_dual_calibration.bin \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/w_dual_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/w_dual_calibration.bin \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/com.qti.feature2.anchorsync.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.anchorsync.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/com.qti.feature2.demux.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.demux.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/com.qti.feature2.derivedoffline.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.derivedoffline.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/com.qti.feature2.frameselect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.frameselect.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/com.qti.feature2.fusion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.fusion.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/com.qti.feature2.generic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.generic.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/com.qti.feature2.gs.kodiak.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.gs.kodiak.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/com.qti.feature2.gs.sm8350.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.gs.sm8350.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/com.qti.feature2.hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.hdr.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/com.qti.feature2.mcreprocrt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.mcreprocrt.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/com.qti.feature2.memcpy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.memcpy.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/com.qti.feature2.mfsr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.mfsr.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/com.qti.feature2.ml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.ml.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/com.qti.feature2.mux.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.mux.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/com.qti.feature2.qcfa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.qcfa.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/com.qti.feature2.rawhdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.rawhdr.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/com.qti.feature2.realtimeserializer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.realtimeserializer.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/com.qti.feature2.rt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.rt.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/com.qti.feature2.rtmcx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.rtmcx.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/com.qti.feature2.serializer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.serializer.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/com.qti.feature2.statsregeneration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.statsregeneration.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/com.qti.feature2.stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.stub.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/com.qti.feature2.swmf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.swmf.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.qcom.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qti.chi.override.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/libaivideocentral.arcsoft.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaivideocentral.arcsoft.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/libarcsoft_super_night_auto_raw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_super_night_auto_raw.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/libauto_framing_arcsoft.uniplugin@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libauto_framing_arcsoft.uniplugin@1.0.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/libautotracking_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libautotracking_interface.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/libbauthserver.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbauthserver.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/libbauthtzcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbauthtzcommon.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/libbodyid.arcsoft.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbodyid.arcsoft.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/libdualcam_refocus_image.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdualcam_refocus_image.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/libdualcam_refocus_video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdualcam_refocus_video.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/libegis_fp_normal_sensor_test.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libegis_fp_normal_sensor_test.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/libgf_in_system_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_in_system_lib.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/libhypermotion_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhypermotion_core.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/libqfp_sensortest.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqfp_sensortest.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/libsec2qc_conversion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsec2qc_conversion.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/libsynaFpSensorTestNwd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsynaFpSensorTestNwd.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/libzoomroi.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libzoomroi.samsung.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/nfc_nci_nxpsn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nfc_nci_nxpsn.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/sensors.grip.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.grip.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
-    vendor/samsung/a73xq/proprietary/vendor/lib64/vendor.samsung.hardware.nfc@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.nfc@2.0.so
+    vendor/samsung/a73xq/proprietary/vendor/lib64/camera/w_dual_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/w_dual_calibration.bin
 
 PRODUCT_PACKAGES += \
+    com.qti.eeprom.irs2381c_polar \
+    com.qti.eeprom.sec2qcconversion \
+    com.qti.eeprom.truly_cmb433 \
+    com.samsung.ois.mcu_stm32g \
+    com.samsung.sensor.gc5035 \
+    com.samsung.sensor.gc5035_macro \
+    com.samsung.sensor.imx258 \
+    com.samsung.sensor.imx616 \
+    com.samsung.sensor.s5khm6 \
+    com.qti.camx.chiiqutils \
+    com.qti.eisv2 \
+    com.qti.eisv3 \
+    com.qti.hvx.addconstant \
+    com.qti.hvx.binning \
+    com.qti.node.depth \
+    com.qti.node.dewarp \
+    com.qti.node.dummyrtb \
+    com.qti.node.dummysat \
+    com.qti.node.eisv2 \
+    com.qti.node.factorydump \
+    com.qti.node.fcv \
+    com.qti.node.gpu \
+    com.qti.node.memcpy \
+    com.qti.node.ml \
+    com.qti.node.sbi \
+    com.qti.node.stich \
+    com.qti.node.swaidenoiser \
+    com.qti.node.swcac \
+    com.qti.node.swlsc \
+    com.qti.node.swmctf \
+    com.qti.node.swmfnr \
+    com.qti.node.swpreprocess \
+    com.qti.node.swregistration \
+    com.qti.stats.aecwrapper \
+    com.qti.stats.afd \
+    com.qti.stats.afwrapper \
+    com.qti.stats.asd \
+    com.qti.stats.awbwrapper \
+    com.qti.stats.cnndriver \
+    com.qti.stats.hafoverride \
+    com.qti.stats.pdlibsony \
+    com.qti.stats.pdlibwrapper \
+    com.qti.stats.tracker \
+    com.qtistatic.stats.aec \
+    com.qtistatic.stats.af \
+    com.qtistatic.stats.awb \
+    com.qtistatic.stats.pdlib \
+    com.samsung.node.capture_bokeh \
+    com.samsung.node.capture_fusion \
+    com.samsung.node.realtimebokeh \
+    com.samsung.node.resolution \
+    com.samsung.node.smooth_transition \
+    com.samsung.node.uniplugin_capture \
+    com.samsung.node.uniplugin_preview \
+    com.samsung.node.uniplugin_recording \
+    com.samsung.node.uniplugin_vdis \
+    com.ss.stats.aec \
+    com.ss.stats.af \
+    com.ss.stats.awb \
+    com.ss.stats.pdlib \
+    com.qti.feature2.anchorsync \
+    com.qti.feature2.demux \
+    com.qti.feature2.derivedoffline \
+    com.qti.feature2.frameselect \
+    com.qti.feature2.fusion \
+    com.qti.feature2.generic \
+    com.qti.feature2.gs.kodiak \
+    com.qti.feature2.gs.sm8350 \
+    com.qti.feature2.hdr \
+    com.qti.feature2.mcreprocrt \
+    com.qti.feature2.memcpy \
+    com.qti.feature2.mfsr \
+    com.qti.feature2.ml \
+    com.qti.feature2.mux \
+    com.qti.feature2.qcfa \
+    com.qti.feature2.rawhdr \
+    com.qti.feature2.realtimeserializer \
+    com.qti.feature2.rt \
+    com.qti.feature2.rtmcx \
+    com.qti.feature2.serializer \
+    com.qti.feature2.statsregeneration \
+    com.qti.feature2.stub \
+    com.qti.feature2.swmf \
+    camera.qcom \
+    com.qti.chi.override \
+    sensors.grip \
+    sensors.ssc \
+    audio.primary.lahaina \
+    libspeakercalibration \
+    com.qti.stats.aec \
+    com.qti.stats.aecxcore \
+    com.qti.stats.af \
+    com.qti.stats.awb \
+    com.qti.stats.haf \
+    com.qti.stats.pdlib \
+    libdepthmapwrapper_secure \
+    libbauthserver \
+    libbauthtzcommon \
+    libegis_fp_normal_sensor_test \
+    libgf_in_system_lib \
+    libqfp_sensortest \
+    libsec2qc_conversion \
+    libsynaFpSensorTestNwd \
+    nfc_nci_nxpsn \
+    vendor.samsung.hardware.nfc@2.0 \
+    nxp.android.hardware.nfc@1.2-service.xml \
     nxp.android.hardware.nfc@1.2-service
