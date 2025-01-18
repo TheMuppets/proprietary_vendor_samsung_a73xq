@@ -37,9 +37,13 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a73xq/proprietary/vendor/firmware/nfc/libpn557_fw.so:$(TARGET_COPY_OUT_VENDOR)/firmware/nfc/libpn557_fw.so \
     vendor/samsung/a73xq/proprietary/vendor/firmware/ois_mcu_stm32g_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ois_mcu_stm32g_fw.bin \
     vendor/samsung/a73xq/proprietary/vendor/firmware/tsp_synaptics/s3908_a73xq_boe.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tsp_synaptics/s3908_a73xq_boe.bin \
+    vendor/samsung/a73xq/proprietary/recovery/root/vendor/firmware/tsp_synaptics/s3908_a73xq_boe.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/tsp_synaptics/s3908_a73xq_boe.bin \
     vendor/samsung/a73xq/proprietary/vendor/firmware/tsp_synaptics/s3908_a73xq_csot.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tsp_synaptics/s3908_a73xq_csot.bin \
+    vendor/samsung/a73xq/proprietary/recovery/root/vendor/firmware/tsp_synaptics/s3908_a73xq_csot.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/tsp_synaptics/s3908_a73xq_csot.bin \
     vendor/samsung/a73xq/proprietary/vendor/firmware/tsp_synaptics/s3908_a73xq_sdc.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tsp_synaptics/s3908_a73xq_sdc.bin \
+    vendor/samsung/a73xq/proprietary/recovery/root/vendor/firmware/tsp_synaptics/s3908_a73xq_sdc.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/tsp_synaptics/s3908_a73xq_sdc.bin \
     vendor/samsung/a73xq/proprietary/vendor/firmware/tsp_synaptics/s3908_a73xq_sdc_4th.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tsp_synaptics/s3908_a73xq_sdc_4th.bin \
+    vendor/samsung/a73xq/proprietary/recovery/root/vendor/firmware/tsp_synaptics/s3908_a73xq_sdc_4th.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/tsp_synaptics/s3908_a73xq_sdc_4th.bin \
     vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev10/wpss.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev10/wpss.b00 \
     vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev10/wpss.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev10/wpss.b01 \
     vendor/samsung/a73xq/proprietary/vendor/firmware/wlan/rev10/wpss.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev10/wpss.b02 \
